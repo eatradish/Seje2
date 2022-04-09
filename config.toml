@@ -1,9 +1,10 @@
 # The URL the site will be built for
 base_url = "https://blog.utopiospgere.net"
-theme = "Seje2"
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
+# What language to use
 default_language = "zh-tw"
+
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
@@ -14,7 +15,25 @@ build_search_index = false
 highlight_code = false
 
 [extra]
-# Put all your custom variables here
+# show Chinese date format instead of normal date format
+seje_chinese_date = true
+# show summary instead of the whole article on the index page
+seje_show_summary_only = false
+# Google Font API mirror URLs (for China mainland users, try fonts.loli.net)
+seje_font_mirror = "fonts.googleapis.com"
+# whether use traditional Chinese style vertical layout
+seje_vertical_layout = false
+# additional custom fonts to include (must be in CSS font-family format)
+seje_custom_fonts = ""
+# whether enable darkmode. Possible values: auto, always, never
+seje_darkmode = "auto"
+# Your site blog links
+seje_menu_links = [
+    {url = "/", name = "home"},
+    {url = "/archives", name = "archives"},
+    {url = "/about",  name = "about"},
+    {url = "/rss", name = "rss"},
+]
 
 [languages.zh-tw.translations]
 title = "寫嘢"
@@ -27,3 +46,4 @@ olderArticle = "舊文"
 newer = "上一篇"
 older = "下一篇"
 loading = "加載中..."
+

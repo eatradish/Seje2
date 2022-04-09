@@ -1,0 +1,20 @@
+body {
+    background-color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6em;
+    padding: 0 1em;
+    margin: 0 auto;
+    max-width: 750px;
+    word-break: break-word;
+}
+
+@media screen and (min-width: 750px) {
+    body {
+        margin-left: calc((100vw - 3em - 750px) / 2);
+    }
+}
+
+@import "_partial/_header";
+@import "_partial/_post";
+@import "_partial/_archive";
+@import "_partial/_normalize";
