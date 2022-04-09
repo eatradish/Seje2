@@ -1,12 +1,12 @@
 # Seje2
 
+![screenshot](Screenshot.png)
 
 ## Contents
 
 - [Installation](#installation)
 - [Options](#options)
   - [Top menu](#top-menu)
-  - [Title](#title)
   - [Author](#author)
 
 ## Installation
