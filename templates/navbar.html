@@ -1,0 +1,16 @@
+<nav class="navbar">
+    <ul class="menu">
+        {% set data = config.extra.seje_menu_links %}
+        {% for item in data %}
+        <li class="menu-item">
+            {% set url = item['url'] ~ '/'%}
+            {% set path = page.path|default(value = section.path) %}
+            {% if url == path or item['url'] == path %}
+            <a href="{{ item['url'] }}" class="current-menu-item-link">{{ trans(key=item['name']) }}</a>
+            {% else %}
+            <a href="{{ item['url'] }}" class="menu-item-link">{{ trans(key=item['name']) }}</a>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+</nav>

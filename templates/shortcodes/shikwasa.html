@@ -1,0 +1,16 @@
+<div class="podcast">
+    <script>
+        const player = new Shikwasa({
+            container: () => document.querySelector('.podcast'),
+            audio: {
+                title: '{{subtitle}}',
+                artist: '{{author}}',
+                cover: '{{image}}',
+                src: '{{media}}',
+            },
+            fixed: {
+                type: 'static',
+            },
+        });
+    </script>
+</div>

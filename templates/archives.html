@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="archive">
+    <ul class="post-archive">
+        {# Group the posts by year #}
+        {% set map = get_section(path="_index.md") | get(key="pages") | group_by(attribute="year") %}
+        {% set_global years = [] %}
+        {# Convert the years map to an array (since maps do not have determined order) #}
+        {% for year, ignored in map %}
+            {% set_global years = years | concat(with=year) %}
+        {% endfor %}
+
+        {% for year in years | sort | reverse %}
+        <div class="years">
+            {% set posts = map[year] %}
+            <div class="year">{{ year }}</div>
+            {% for post in posts %}
+                <li class="post-item">
+                    <span class="post-date">{{ post.date | date(format="%m/%d") }}</span>
+                    <a href="{{ post.permalink }}" class="post-title">{{ post.title }}</a>
+                </li>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </ul>
+</section>
+{% endblock %}

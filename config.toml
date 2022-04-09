@@ -1,0 +1,29 @@
+# The URL the site will be built for
+base_url = "https://blog.utopiospgere.net"
+theme = "Seje2"
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+default_language = "zh-tw"
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = false
+
+[extra]
+# Put all your custom variables here
+
+[languages.zh-tw.translations]
+title = "寫嘢"
+home = "主頁"
+archives = "歸檔"
+about = "關於"
+rss = "訂閱"
+more = "查看全文"
+olderArticle = "舊文"
+newer = "上一篇"
+older = "下一篇"
+loading = "加載中..."

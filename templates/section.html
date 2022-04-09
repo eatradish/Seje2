@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% import "macros.html" as macros %}
+
+{% block content %}
+<article class="post">
+    <div class="post-title">
+        <h1 class="title">{{ section.title }}</h1>
+    </div>
+    <div class="post-content">
+        {{ section.content | safe }}
+    </div>
+    <div class="post-meta">
+        <span class="post-time">
+        {% if config.extra.seje_chinese_date %}
+            {{ macros::format_chinese_date(year=section.extra.year, month=section.extra.month, day=section.extra.day) }}
+        {% else %}
+            {{ section.extra.date|date(format="%Y/%m/%d") }}
+        {% endif %}
+        </span>
+    </div>
+</article>
+
+<div class="prev_next">
+<nav id="prev_next">
+    <div class="prev">
+        {% if section.later %}
+        <p>Newer</p><a href="{{ section.later.permalink }}"><div class="article-nav-title">{{ section.later.title }}</div></a>
+        {% endif %}
+    </div>
+    <div class="next">
+        {% if section.earlier %}
+        <p>Older</p><a href="{{ section.earlier.permalink }}"><div class="article-nav-title">{{ section.earlier.title }}</div></a>
+        {% endif %}
+    </div>
+</nav>
+</div>
+
+<div class="post-comment">
+{# Discussion #}
+</div>
+{% endblock %}
