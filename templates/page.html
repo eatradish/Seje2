@@ -25,12 +25,12 @@
 <nav id="prev_next">
     <div class="prev">
         {% if page.later %}
-        <p>Newer</p><a href="{{ page.later.permalink }}"><div class="article-nav-title">{{ page.later.title }}</div></a>
+        <p>{{ trans(key="newer") }}<</p><a href="{{ page.later.permalink }}"><div class="article-nav-title">{{ page.later.title }}</div></a>
         {% endif %}
     </div>
     <div class="next">
         {% if page.earlier %}
-        <p>Older</p><a href="{{ page.earlier.permalink }}"><div class="article-nav-title">{{ page.earlier.title }}</div></a>
+        <p>{{ trans(key="older") }}</p><a href="{{ page.earlier.permalink }}"><div class="article-nav-title">{{ page.earlier.title }}</div></a>
         {% endif %}
     </div>
 </nav>
