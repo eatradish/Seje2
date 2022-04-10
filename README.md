@@ -14,7 +14,7 @@ First download this theme to your `themes` directory:
 
 ```bash
 cd themes
-git clone https://github.com/getzola/after-dark.git
+git clone https://github.com/eatradish/Seje2
 ```
 and then enable it in your `config.toml`:
 
