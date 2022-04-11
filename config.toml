@@ -30,10 +30,10 @@ seje_custom_fonts = ""
 seje_darkmode = "auto"
 # Your site blog links
 seje_menu_links = [
-    {url = "/", name = "home"},
-    {url = "/archives", name = "archives"},
-    {url = "/about",  name = "about"},
-    {url = "/atom.xml", name = "rss"},
+    {url = "$BASE_URL/", name = "home"},
+    {url = "$BASE_URL/archives", name = "archives"},
+    {url = "$BASE_URL/about",  name = "about"},
+    {url = "$BASE_URL/atom.xml", name = "rss"},
 ]
 
 [languages.zh-tw.translations]
