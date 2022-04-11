@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    {% block rss %}
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
+    {% endblock %}
     {% set sub_title = section.title | default(value=page.title | default(value='')) %}
     {% if sub_title %}
         {% set title = sub_title ~ ' - ' ~ trans(key="title") %}

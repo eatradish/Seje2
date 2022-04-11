@@ -4,6 +4,7 @@ base_url = "https://blog.utopiospgere.net"
 compile_sass = true
 # What language to use
 default_language = "zh-tw"
+generate_feed = true
 
 
 # Whether to build a search index to be used later on by a JavaScript library
@@ -32,7 +33,7 @@ seje_menu_links = [
     {url = "/", name = "home"},
     {url = "/archives", name = "archives"},
     {url = "/about",  name = "about"},
-    {url = "/rss", name = "rss"},
+    {url = "/atom.xml", name = "rss"},
 ]
 
 [languages.zh-tw.translations]
