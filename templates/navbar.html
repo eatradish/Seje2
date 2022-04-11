@@ -3,10 +3,10 @@
         {% set data = config.extra.seje_menu_links %}
         {% for item in data %}
         <li class="menu-item">
-            {% set url_1 = item['url'] | replace(from="$BASE_URL", to="") %}
+            {% set url_inner = item['url'] | replace(from="$BASE_URL", to="") %}
             {% set url = url_1 ~ '/'%}
             {% set path = page.path|default(value = section.path) %}
-            {% if url == path or url_1 == path %}
+            {% if url == path or url_inner == path %}
             <a href="{{ item['url'] | replace(from="$BASE_URL", to=config.base_url) }}" class="current-menu-item-link">{{ trans(key=item['name']) }}</a>
             {% else %}
             <a href="{{ item['url'] | replace(from="$BASE_URL", to=config.base_url) }}" class="menu-item-link">{{ trans(key=item['name']) }}</a>

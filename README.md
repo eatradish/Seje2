@@ -2,6 +2,8 @@
 
 ![screenshot](Screenshot.png)
 
+[Demo](https://eatradish.github.io/Seje2)
+
 ## Contents
 
 - [Installation](#installation)
