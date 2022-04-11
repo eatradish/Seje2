@@ -7,7 +7,7 @@
 - [Installation](#installation)
 - [Options](#options)
   - [Top menu](#top-menu)
-  - [Author](#author)
+  - ["About" page](#"About"-page)
 
 ## Installation
 First download this theme to your `themes` directory:
@@ -47,16 +47,15 @@ seje2_menu_links = [
 If you put `$BASE_URL` in a url, it will automatically be replaced by the actual
 site URL.
 
-### Author
-You can set this on a per page basis or in the config file.
+### "About"-page
 
-```
-In a page (wrap this in +++):
+In a about page (wrap this in +++):
+
 ```toml
 title = "..."
-date = 1970-01-01
 
 [extra]
-author = "John Smith"
+year = 2019
+month = 11
+day = 03
 ```
-
