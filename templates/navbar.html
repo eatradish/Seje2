@@ -4,7 +4,7 @@
         {% for item in data %}
         <li class="menu-item">
             {% set url_inner = item['url'] | replace(from="$BASE_URL", to="") %}
-            {% set url = url_1 ~ '/'%}
+            {% set url = url_inner ~ '/'%}
             {% set path = page.path|default(value = section.path) %}
             {% if url == path or url_inner == path %}
             <a href="{{ item['url'] | replace(from="$BASE_URL", to=config.base_url) }}" class="current-menu-item-link">{{ trans(key=item['name']) }}</a>
