@@ -1,6 +1,6 @@
 # Seje2
 
-![screenshot](Screenshot.png)
+![screenshot](screenshot.png)
 
 [Demo](https://eatradish.github.io/Seje2)
 
