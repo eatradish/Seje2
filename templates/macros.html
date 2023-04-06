@@ -9,8 +9,5 @@
     '廿一', '廿二', '廿三',   '廿四',
     '廿五', '廿六', '廿七',   '廿八',
     '廿九', '三十', '三十一'] %}
-{% for c in year | as_str %}
-    {{ lut1 | nth(n=c | int) }}
-{% endfor %}
-年{{ lut2 | nth(n=month-1)}}月{{ lut2 | nth(n=day-1) }}日
+{% for c in year | as_str %}{{ lut1 | nth(n=c | int) }}{% endfor %}年{{ lut2 | nth(n=month-1)}}月{{ lut2 | nth(n=day-1) }}日
 {% endmacro %}
