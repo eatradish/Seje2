@@ -61,3 +61,11 @@ year = 2019
 month = 11
 day = 03
 ```
+
+### License
+
+Set a field in `extra` with a key of `license`:
+
+```toml
+license = "@ 宇宙眼睛人"
+```
