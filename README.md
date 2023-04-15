@@ -32,6 +32,17 @@ paginate_by = 5
 
 The posts should therefore be in directly under the `content` folder.
 
+and requires your index section (`about/_index.md`) to be paginated to work:
+
+```toml
+title = "..."
+
+[extra]
+year = 2019
+month = 11
+day = 3
+```
+
 ## Options
 
 ### Top-menu
@@ -48,19 +59,6 @@ seje2_menu_links = [
 
 If you put `$BASE_URL` in a url, it will automatically be replaced by the actual
 site URL.
-
-### "About"-page
-
-In a about page (wrap this in +++):
-
-```toml
-title = "..."
-
-[extra]
-year = 2019
-month = 11
-day = 03
-```
 
 ### License
 
