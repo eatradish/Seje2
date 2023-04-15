@@ -3,13 +3,7 @@
 ![screenshot](screenshot.png)
 
 [Demo](https://eatradish.github.io/Seje2)
-
-## Contents
-
-- [Installation](#installation)
-- [Options](#options)
-  - [Top menu](#top-menu)
-  - ["About" page](#"About"-page)
+[中文 README](https://github.com/eatradish/Seje2/blob/main/README_zh_cn.md)
 
 ## Installation
 First download this theme to your `themes` directory:
