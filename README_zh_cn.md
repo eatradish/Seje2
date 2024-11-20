@@ -4,13 +4,6 @@
 
 [Demo](https://eatradish.github.io/Seje2)
 
-## Contents
-
-- [Installation](#installation)
-- [Options](#options)
-  - [Top menu](#top-menu)
-  - ["About" page](#"About"-page)
-
 ## 安装
 确保使用 zola init myblog 创建了你的 zola 博客文件夹，然后将 Seje2 克隆到本地 themes 文件下：
 
@@ -68,7 +61,7 @@ base_url = "https://blog.miraclemilk.me/Seje2"
 可以在 `config.toml` 的 `extra` 中修改 `License 字段的内容`，来设置你的文章版权显示:
 
 ```toml
-license = "@ 宇宙眼睛人"
+license = "@ 宇宙眼镜人"
 ```
 
 这会在博客的页尾显示你的文章版权，留空就可以不显示。

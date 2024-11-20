@@ -3,7 +3,7 @@
 ![screenshot](screenshot.png)
 
 [Demo](https://eatradish.github.io/Seje2)
-[中文 README](https://github.com/eatradish/Seje2/blob/main/README_zh_cn.md)
+[简体中文](https://github.com/eatradish/Seje2/blob/main/README_zh_cn.md)
 
 ## Installation
 First download this theme to your `themes` directory:
@@ -59,5 +59,5 @@ site URL.
 Set a field in `extra` with a key of `license`:
 
 ```toml
-license = "@ 宇宙眼睛人"
+license = "@ 宇宙眼镜人"
 ```
