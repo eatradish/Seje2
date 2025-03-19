@@ -54,6 +54,13 @@ seje2_menu_links = [
 If you put `$BASE_URL` in a url, it will automatically be replaced by the actual
 site URL.
 
+### MathJax Latex Support
+Set a field in `extra` with a bool key of `seje_mathjax`:
+
+```toml
+seje_mathjax = true
+```
+
 ### License
 
 Set a field in `extra` with a key of `license`:

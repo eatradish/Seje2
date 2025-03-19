@@ -39,7 +39,7 @@ day = 3
 ## 选项
 
 ### 菜单栏
-要修改菜单栏的内容，请修改 `config.toml` extra 中 `seje2_menu_links` 的内容，像下面这样:
+要修改菜单栏的内容，请修改根目录下 `config.toml` extra 中 `seje2_menu_links` 的内容，像下面这样:
 
 ```toml
 seje2_menu_links = [
@@ -50,10 +50,17 @@ seje2_menu_links = [
 ]
 ```
 
-这个 BASE_URL 是你在 `config.toml` 中 `base_url` 字段的内容，像 demo 中就是：
+这个 BASE_URL 是你在根目录下的 `config.toml` 中 `base_url` 字段的内容，像 demo 中就是：
 
 ```toml
 base_url = "https://blog.miraclemilk.me/Seje2"
+```
+
+### MathJax Latex 支持
+如果需要启用 MathJax Latex 支持，请修改根目录下 `config.toml` extra 中 `seje_mathjax` 的布尔值，像下面这样：
+
+```toml
+seje_mathjax = true
 ```
 
 ### 文章版权
