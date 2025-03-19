@@ -54,6 +54,7 @@
     {% block metadata %}{# <meta property="og:image" content="/<%= theme.favicon %>"> #}{% endblock %}
 
     <!-- MathJax Latex Support Script-->
+    {% if config.extra.seje_mathjax %}
     <script>
         window.MathJax = {
             tex: {
@@ -62,6 +63,7 @@
         };
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    {% endif %}
 
 </head>
 <body>

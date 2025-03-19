@@ -24,6 +24,8 @@ seje_vertical_layout = false
 seje_custom_fonts = ""
 # whether enable darkmode. Possible values: auto, always, never
 seje_darkmode = "auto"
+# MathJax Latex Support (won't load the mathjax.js if seje_mathjax is false)
+seje_mathjax = false
 
 # The theme author info: you!
 [author]
