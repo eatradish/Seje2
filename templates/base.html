@@ -52,6 +52,17 @@
     <link rel="stylesheet" href="https://{{ font_base_url }}/css2?family={{ fonts_url }}&display=swap">
     <style>body { font-family: {{ font_family | safe }} }</style>
     {% block metadata %}{# <meta property="og:image" content="/<%= theme.favicon %>"> #}{% endblock %}
+
+    <!-- MathJax Latex Support Script-->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 </head>
 <body>
     {% block header %}
