@@ -9,10 +9,15 @@
         <div class="post-title"><a href="{{ post.permalink }}" class="post-title-link">{{ post.title }}</a></div>
         <div class="post-content">
             {% if config.extra.seje_show_summary_only %}
-                {{ post.summary }}
+                {{ post.summary | safe }}
                 <a href="{{ post.permalink }}" class="More">More</a>
             {% else %}
-                {{ post.content | safe }}
+                {% if post.summary %}
+                    {{ post.summary | safe }}
+                    <a href="{{ post.permalink }}" class="More">More</a>
+                {% else %}
+                    {{ post.content | safe }}
+                {% endif %}
             {% endif %}
         </div>
         <div class="post-meta">
